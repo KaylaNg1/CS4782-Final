@@ -41,7 +41,7 @@ We were able to reimplment all three main contributions described in the paper. 
 3. The paper was vague in terms of tuning some parameters 
 
 ## Conclusion 
-Overall, we believe we had a sucessful reimplmentation of Image2StyleGAN++.
+Overall, we believe we had a sucessful reimplmentation of Image2StyleGAN++. Although we were not able to make perfect replicas of the result, we were able to sucessfully demonstrate the improvements this paper proposed. Our barriers were input image quality, and a vague description of specific implementations in the paper. 
 
 ## References 
 
