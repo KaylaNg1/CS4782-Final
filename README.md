@@ -21,6 +21,9 @@ Contribution 2:
 
 ## Re-implementation Details 
 ## Reproduction Steps 
+To use this repo to reproduce the results, you must run the full Image2Style_Implementation.ipynb. To pass in the correct images, you must change the path for the input images in the framework. Images are imported many times throughout the 3 contributions, so it's important to look for all places we are importing. Additionally, any new images you want to run this framework on must be dropped in the data folder. Seperate contributions are seperated through markdown in the file. 
+
+The GPU requirements for this code require T4 to run. Additionally, each contribution can take up to 40 minutes to 1 hour to run.   
 ## Results/Insights 
 ## Conclusion 
 ## References 
