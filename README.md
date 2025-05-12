@@ -33,15 +33,14 @@ In our main executable, we have all three of the reimplmented contributions. The
 
 We based our implementation upon an existing pre-trained implementation of Image2StyleGAN. The original code for it can be found here: https://github.com/zaidbhat1234/Image2StyleGAN. We then extended it with the three contributions of described in the paper.
 
-For the first contribution, adding noise map optimization, the evaluation metrics would be achieving as PSNR score of ~44/45 post noise optimization. The other contributions would be evaluated qualitatively as the paper does not specify any quantitative metrics.
-
 There were some hyper-parameters and function implementations unspecified in the paper (e.g style loss function, masking function, etc ). Therefore, we implemented our own custom versions that we attribute to our slightly differing results.
 
+For the first contribution, adding noise map optimization, the evaluation metrics would be achieving as PSNR score of ~44/45 post noise optimization. The other contributions would be evaluated qualitatively as the paper does not specify any quantitative metrics.
+- The methodology for contribution 1: applying w+ latent optimization ( already provided by Image2StyleGAN ) THEN applying noise map optimization which initialized each noise layer with a random tensor of noise, then a training loop was implemented which would generate the noise injected image and calculate the loss ( MSE + Perceptual ).
+
 For the second contribution, we choose to reimplement 2 applications highlighted in the paper: Local Edits with Scribble and Style Transfer. 
-
-The methodology for local edits with scirrble was as follows: extracting mask, applying mask to image, optimizing W+ with mask and noise optimization. This algorithm was highlighted in algorithm 6 of the paper. It produced comparable results. 
-
-The methodology for style transfer was as follows: extracting mask, applying mask to image, optimizing W+ with mask, optimizing W+ with style loss, and noise optimization. This algorithm was highlighted in algorithm 7 of the paper. It produced comparable results to the paper. We believe any differences present here were attributed to image quality, and lack of information on the specifics of thier style loss function.  
+- The methodology for local edits with scribble was as follows: extracting mask, applying mask to image, optimizing W+ with mask and noise optimization. This algorithm was highlighted in algorithm 6 of the paper. It produced comparable results. 
+- The methodology for style transfer was as follows: extracting mask, applying mask to image, optimizing W+ with mask, optimizing W+ with style loss, and noise optimization. This algorithm was highlighted in algorithm 7 of the paper. It produced comparable results to the paper. We believe any differences present here were attributed to image quality, and lack of information on the specifics of thier style loss function.  
 
 ## Reproduction Steps 
 To use this repo to reproduce the results, you must run the full Image2Style_Implementation.ipynb. All of the dependencies, libraries, and command-line arguments are already embedded into the cells. To pass in the correct images, you must change the path for the input images in the framework. Images are imported many times throughout the 3 contributions, so it's important to look for all places we are importing. Additionally, any new images you want to run this framework on must be dropped in the data folder. Seperate contributions are seperated through markdown in the file. 
