@@ -18,11 +18,11 @@ Contribution 2:
 
 
 ## GitHub Contents 
-Data -- These are the images that are passed as input to the model 
-Results -- These are the different results developed by our framework 
-Poster -- This is a poster describing our presentation of the paper for our CS4782 clss 
-Report -- This is a report describing our implementation details 
-Code -- This is where our main executable is. 
+Data -- These are the images that are passed as input to the model   
+Results -- These are the different results developed by our framework    
+Poster -- This is a poster describing our presentation of the paper for our CS4782 class   
+Report -- This is a report describing our implementation details    
+Code -- This is where our main executable is.    
 
 In our main executable, we have all three of the reimplmented contributions. There is markdown text seperating when each new contribution starts. The code must be run together as later contributions depend on functions implemented in previous contributions. 
 
