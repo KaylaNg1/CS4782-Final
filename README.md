@@ -47,7 +47,7 @@ Overall, we believe we had a sucessful reimplmentation of Image2StyleGAN++.
 Abdal, R., Qin, Y., & Wonka, P. (2020). Image2StyleGAN++: How to Edit the Embedded Images? CVPR, 8296-8305.   
 https://openaccess.thecvf.com/content_CVPR_2020/papers/Abdal_Image2StyleGAN_How_to_Edit_the_Embedded_Images_CVPR_2020_paper.pdf.   
 Abdal, R., Qin, Y., & Wonka, P. (2020). Image2StyleGAN++: How to Edit the Embedded Images? -Supplementary Material-. CVPR.
-https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Abdal_Image2StyleGAN_How_to_CVPR_2020_supplemental.pdf 
+https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Abdal_Image2StyleGAN_How_to_CVPR_2020_supplemental.pdf   
 Bhat, Z. (2021). Image2StyleGAN [Pretrained Model]. https://github.com/zaidbhat1234/Image2StyleGAN.    
 Mohd, A. (2021, February 8). Neural style transfer using PyTorch. DEV Community.  https://dev.to/aquibpy/neural-style-transfer-using-pytorch-3d5l.   
 
