@@ -28,12 +28,15 @@ Code -- This is where our main executable is.
 
 In our main executable, we have all three of the reimplmented contributions. There is markdown text seperating when each new contribution starts. The code must be run together as later contributions depend on functions implemented in previous contributions. 
 
-
 ## Re-implementation Details 
+
+We based our implementation upon an existing pre-trained implementation of Image2StyleGAN. The original code for it can be found here: https://github.com/zaidbhat1234/Image2StyleGAN. We then extended it with the three contributions of described in the paper.
+
 ## Reproduction Steps 
 To use this repo to reproduce the results, you must run the full Image2Style_Implementation.ipynb. To pass in the correct images, you must change the path for the input images in the framework. Images are imported many times throughout the 3 contributions, so it's important to look for all places we are importing. Additionally, any new images you want to run this framework on must be dropped in the data folder. Seperate contributions are seperated through markdown in the file. 
 
 The GPU requirements for this code require T4 to run. Additionally, each contribution can take up to 40 minutes to 1 hour to run.   
+
 ## Results/Insights 
 We were able to reimplment all three main contributions described in the paper. However, our results are not exactly like the paper. We attribute these differences to a couple different factors: 
 1. There were no implmentation details for how the paper implemented style loss
@@ -44,7 +47,6 @@ We were able to reimplment all three main contributions described in the paper. 
 Overall, we believe we had a sucessful reimplmentation of Image2StyleGAN++. Although we were not able to make perfect replicas of the result, we were able to sucessfully demonstrate the improvements this paper proposed. Our barriers were input image quality, and a vague description of specific implementations in the paper. 
 
 ## References 
-
 13.12. Neural Style Transfer — Dive into Deep Learning 0.15.0 documentation. (n.d.). D2l.ai. https://d2l.ai/chapter_computer-vision/neural-style.html.  
 Abdal, R., Qin, Y., & Wonka, P. (2020). Image2StyleGAN++: How to Edit the Embedded Images? CVPR, 8296-8305.   
 https://openaccess.thecvf.com/content_CVPR_2020/papers/Abdal_Image2StyleGAN_How_to_Edit_the_Embedded_Images_CVPR_2020_paper.pdf.   
@@ -54,6 +56,6 @@ Bhat, Z. (2021). Image2StyleGAN [Pretrained Model]. https://github.com/zaidbhat1
 Mohd, A. (2021, February 8). Neural style transfer using PyTorch. DEV Community.  https://dev.to/aquibpy/neural-style-transfer-using-pytorch-3d5l.   
 
 ## Acknowledgements 
-We would like to acknowledge the original authors of the Image2StyleGAN++ paper (Rameen Abdal, Yipeng Qin, and Peter Wonka). Additionally, we completed this reimplementation as part of a class at Cornell University, CS 4782(Deep Learning). We would like to acknowledge the professors and course staff who provided guidance and asistance. 
+We would like to acknowledge the original authors of the Image2StyleGAN++ paper (Rameen Abdal, Yipeng Qin, and Peter Wonka). Additionally, we completed this reimplementation as part of a class at Cornell University, CS 4782 (Deep Learning). We would like to acknowledge the professors and course staff who provided guidance and asistance. 
 
 
