@@ -16,6 +16,8 @@ In contribution 1, the paper prosed optimizing the moise seperatly from the late
 
 Contribution 2: 
 
+Contribution 3:
+In contribution 3, the authors of the paper combined W+ embedding with activation tensors manipulation in order to perform both high quality local edits and global semantic edits.  
 
 ## GitHub Contents 
 Data -- These are the images that are passed as input to the model   
